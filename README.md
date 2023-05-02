@@ -2,7 +2,7 @@
   <img src="./furo.svg" alt="Furo Logo" width="400" height="240">
 </p>
 
-# furo-sdk-vue
+# Furo Vue Sample Project
 
 Check Furo's [Official Documentation](https://docs.furo.one/react-sdk).
 
