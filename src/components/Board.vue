@@ -1,6 +1,8 @@
 <template>
   <div class="test">
-    <button @click="loginWithRedirect">login</button>
+    <button @click="loginWithRedirect" :disabled="isAuthenticated">
+      login
+    </button>
     <button @click="logout" :disabled="!isAuthenticated">logout</button>
     <h1>ID: {{ cid }}</h1>
     <code>
