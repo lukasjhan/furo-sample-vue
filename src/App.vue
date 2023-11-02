@@ -11,18 +11,18 @@
 </template>
 
 <script>
-import FuroProvider from "./components/FuroProvider.vue";
-import Board from "./components/Board.vue";
+import FuroProvider from './components/FuroProvider.vue';
+import Board from './components/Board.vue';
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     FuroProvider,
     Board,
   },
   setup() {
     return {
-      clientId: "Set up your client ID in App.vue",
+      clientId: process.env.VUE_APP_CLIENT_ID || '',
       origin: window.location.origin,
     };
   },
@@ -43,11 +43,6 @@ export default {
   align-items: center;
   justify-content: center;
   gap: 40px;
-}
-
-#logo {
-  height: 200px;
-  pointer-events: none;
 }
 
 body {
